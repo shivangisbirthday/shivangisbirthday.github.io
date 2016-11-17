@@ -1,7 +1,30 @@
-<!doctype HTML>
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> Hello World</title>
+	<title> Home </title>
+	<link rel = "stylesheet" type = "text/css" href = "./jquery.fullPage.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE']
+			});
+		});
+	</script>
 </head>
 <body>
-	<h1><b>Hello World</b></h1>
+	<div id = "fullpage" >
+		<div class = "section" id ="firstPage" >
+			<h1>Slide 1</h1>
+		</div>
+		<div class = "section" id = "secondPage"> 
+			<h1>Slide 2</h1>
+		</div>
+		<div class = "section" id = "thirdPage" >
+			<h1>Slide 3</h1>
+		</div>
+	</div>
 </body>
+</html>
